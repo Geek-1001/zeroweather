@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/selector_navigation_drawer_item"
+    android:padding="@dimen/standard_padding_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/standard_textSize_big"
+        android:textColor="@color/standard_textColor_normal"
+        android:text="23 May"
+        android:id="@+id/itemDetailsList_weatherDate_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemDetailsList_weatherDate_textView"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/standard_textColor_secondary"
+        android:text="light rain"
+        android:id="@+id/itemDetailsList_description_textView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/standard_textSize_normal"
+            android:textColor="@color/app_mainColor"
+            android:text="+23˚"
+            android:id="@+id/itemDetailsList_maxTemperature_textView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/standard_textSize_normal"
+            android:textColor="@color/app_mainColor"
+            android:text="-12˚"
+            android:id="@+id/itemDetailsList_minTemperature_textView"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

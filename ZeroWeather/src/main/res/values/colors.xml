@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default values -->
+    <color name="app_mainColor">#F32B2B</color>
+    <color name="app_mainColor_pressed">#48F32B2B</color>
+    <color name="standard_backgroundColor_layout">#EEEEEE</color>
+    <color name="standard_backgroundColor_pressed">#AAAAAA</color>
+    <color name="standard_textColor_normal">#ff515151</color>
+    <color name="standard_textColor_secondary">#ff757575</color>
+    <color name="standard_shadowColor_text">#48000000</color>
+
+    <color name="actionBar_default">@color/standard_backgroundColor_layout</color>
+    <color name="actionBar_navigationDrawerOpened">#cdcdcd</color>
+
+
+
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standard_backgroundColor_layout">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/standard_textSize_big"
+            android:textColor="@color/app_mainColor"
+            android:text="@string/dialogAddCity_dialog_title"
+            android:id="@+id/dialogAddCity_dialogTitle_textView" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/app_mainColor"/>
+
+    </FrameLayout>
+
+     <EditText
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:singleLine="true"
+         android:hint="@string/dialogAddCity_textFieldHint"
+         android:id="@+id/dialogAddCity_city_editText" />
+
+</LinearLayout>

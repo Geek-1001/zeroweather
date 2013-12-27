@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standard_backgroundColor_layout"
+    android:id="@+id/activityDetails_rootLayout_layout">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="#ffc9c9c9"
+        android:dividerHeight="1dp"
+        android:id="@+id/activityDetails_detailsList_listView" />
+
+</LinearLayout>

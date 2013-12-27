@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZeroWeather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Fragment Main -->
+    <string name="fragmentMain_offlineMessage">Check internet connection!</string>
+    <string name="fragmentMain_moreButtonLabel">more</string>
+
+    <!-- Progress Fragment -->
+    <string name="fragmentProgress_offlineMessage">You are offline</string>
+
+    <!-- Dialog add city -->
+    <string name="dialogAddCity_dialog_title">Add city</string>
+    <string name="dialogAddCity_textFieldHint">city</string>
+
+    <!-- Menu -->
+    <string name="menu_add">Add city</string>
+
+
+</resources>

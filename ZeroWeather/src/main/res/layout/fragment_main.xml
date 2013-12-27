@@ -1,0 +1,151 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/standard_padding_layout"
+    android:background="@color/standard_backgroundColor_layout"
+    android:id="@+id/fragmentMain_mainLayout">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fragmentMain_weatherIcon_imageView" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fragmentMain_weatherIcon_imageView"
+        android:id="@+id/fragmentMain_mainWeatherInfo_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/standard_textSize_extraBig"
+            android:textColor="@color/app_mainColor"
+            android:shadowColor="@color/standard_shadowColor_text"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:id="@+id/fragmentMain_temperatureValue_textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fragmentMain_temperatureValue_textView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/standard_textColor_normal"
+            android:textSize="@dimen/standard_textSize_big"
+            android:id="@+id/fragmentMain_currentCityName_textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fragmentMain_temperatureValue_textView"
+            android:layout_below="@+id/fragmentMain_currentCityName_textView"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/standard_textColor_secondary"
+            android:textSize="@dimen/standard_textSize_normal"
+            android:id="@+id/fragmentMain_currentCountryName_textView"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fragmentMain_mainWeatherInfo_layout"
+        android:textSize="@dimen/standard_textSize_middle"
+        android:textColor="@color/standard_textColor_normal"
+        android:id="@+id/fragmentMain_weatherDescription_textView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/fragmentMain_weatherDescription_textView"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cloudy_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/standard_textSize_small"
+                android:id="@+id/fragmentMain_cloudy_textView"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/humidity_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/standard_textSize_small"
+                android:id="@+id/fragmentMain_humidity_textView"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pressure_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/standard_textSize_small"
+                android:id="@+id/fragmentMain_pressure_textView"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_more_button"
+        android:drawableTop="@drawable/ic_more"
+        android:textColor="@color/app_mainColor"
+        android:textAllCaps="true"
+        android:text="@string/fragmentMain_moreButtonLabel"
+        android:id="@+id/fragmentMain_more_button" />
+
+
+
+</RelativeLayout>

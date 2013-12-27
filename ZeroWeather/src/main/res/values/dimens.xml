@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Default Values -->
+    <dimen name="standard_padding_layout">15dp</dimen>
+    <dimen name="standard_textSize_small">12sp</dimen>
+    <dimen name="standard_textSize_middle">14sp</dimen>
+    <dimen name="standard_textSize_normal">16sp</dimen>
+    <dimen name="standard_textSize_big">22sp</dimen>
+    <dimen name="standard_textSize_extraBig">85sp</dimen>
+
+
+</resources>

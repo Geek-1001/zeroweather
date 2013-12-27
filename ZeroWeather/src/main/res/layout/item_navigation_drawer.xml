@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/selector_navigation_drawer_item"
+    android:layout_height="65dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:textSize="@dimen/standard_textSize_normal"
+        android:textColor="@color/standard_textColor_normal"
+        android:text="Moscow"
+        android:id="@+id/itemNavigationDrawer_cityTitle_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/standard_textSize_normal"
+        android:textColor="@color/app_mainColor"
+        android:text="23˚"
+        android:id="@+id/itemNavigationDrawer_lastTemperatureTitle_textView" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffcbcbcb"/>
+
+</RelativeLayout>
