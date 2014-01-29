@@ -160,8 +160,10 @@ public class MainActivity extends FragmentActivity implements LoaderManager.Load
     private ListView.OnItemLongClickListener drawerItemLongClickListener = new ListView.OnItemLongClickListener(){
         @Override
         public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-            databaseUtils.removeItem(DatabaseHelper.CITY_TABLE_NAME, id);
-            getSupportLoaderManager().getLoader(0).forceLoad();
+            if(databaseUtils.getRowsNumber(DatabaseHelper.CITY_TABLE_NAME) != 1){
+                databaseUtils.removeItem(DatabaseHelper.CITY_TABLE_NAME, id);
+                getSupportLoaderManager().getLoader(0).forceLoad();
+            }
             return true;
         }
     };

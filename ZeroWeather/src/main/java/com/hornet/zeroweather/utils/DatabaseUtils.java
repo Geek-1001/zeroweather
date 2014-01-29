@@ -140,4 +140,9 @@ public class DatabaseUtils {
         return false;
     }
 
+    public int getRowsNumber(String table){
+        Cursor cursor = getAllDataForTable(table);
+        return cursor.getCount();
+    }
+
 }
